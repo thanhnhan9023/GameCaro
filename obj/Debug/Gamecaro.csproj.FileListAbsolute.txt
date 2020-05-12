@@ -1,0 +1,9 @@
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\bin\Debug\Gamecaro.exe.config
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\bin\Debug\Gamecaro.exe
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\bin\Debug\Gamecaro.pdb
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.Form1.resources
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.Properties.Resources.resources
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.csproj.GenerateResource.Cache
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.exe
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.pdb
+C:\Lap Trinh HUFI\ungdungthongminh\gamecaro\Gamecaro\obj\Debug\Gamecaro.csprojResolveAssemblyReference.cache
