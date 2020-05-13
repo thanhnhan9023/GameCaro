@@ -64,13 +64,17 @@ namespace Gamecaro
       
             
                 tmThoigian.Start();
-               
-          
+        }
+        public void dungthoigianchoigame()
+        {
+            prb1.Value = 0;
+            tmThoigian.Stop();
         }
      
         public void taobanco()
         {
             panel1.Enabled = true;
+              thoigiangame();
             khoitao();
             Matrix = new List<List<Button>>();
             Button oldButton = new Button() { Width = 0, Location = new Point(0, 0) };
@@ -129,18 +133,27 @@ namespace Gamecaro
             if (IsEndgame(btn))
             {
                 EndGame();
-                prb1.Value = 0;
-                tmThoigian.Stop();
+                dungthoigianchoigame();
                 
                 panel1.Enabled = false;
             }
            
         }
-        
+
+        private void kiemtranguoithang()
+        {
+            if (Playercurrent == 0)
+            {
+                MessageBox.Show("Người chơi o thắng");
+
+            }
+            else
+                MessageBox.Show("Người chơi x thắng");
+        }
 
         private void EndGame()
         {
-            MessageBox.Show("kết thúc game");
+            kiemtranguoithang();
 
 
         }
@@ -300,7 +313,7 @@ namespace Gamecaro
         private void Form1_Load(object sender, EventArgs e)
         {
             taobanco();
-            thoigiangame();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -313,11 +326,25 @@ namespace Gamecaro
             prb1.PerformStep();
             if (EndGameThoiGian())
             {
-                MessageBox.Show("kết thúc game");
+                EndGame();
                 panel1.Enabled = false;
+           
             }
                  
          
+        }
+
+     
+
+        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            dungthoigianchoigame();
+            taobanco();
+
+        }
+        public void test()
+        {
         }
       
 
