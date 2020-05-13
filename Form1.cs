@@ -82,15 +82,15 @@ namespace Gamecaro
                 {
                 Button btn = new Button();
                 btn.Size = new Size(Banco.co_witdh, Banco.co_height);
-              //  btn.Location = new Point(i*btn.Width,j*btn.Height+1);
-                btn.Location = new Point(oldButton.Location.X + oldButton.Width, oldButton.Location.Y);
+              //btn.Location = new Point(i*btn.Width,j*btn.Height+1);
+               btn.Location = new Point(oldButton.Location.X + oldButton.Width, oldButton.Location.Y);
                 btn.BackgroundImageLayout = ImageLayout.Stretch;
                 btn.Tag = i.ToString();
             
                 btn.Click += btn_click;
                 panel1.Controls.Add(btn);
                 Matrix[i].Add(btn);
-                oldButton = btn;
+               oldButton = btn;
               
                
                 }
@@ -129,6 +129,9 @@ namespace Gamecaro
             if (IsEndgame(btn))
             {
                 EndGame();
+                prb1.Value = 0;
+                tmThoigian.Stop();
+                
                 panel1.Enabled = false;
             }
            
